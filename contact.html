@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Contact | William Mabia</title>
+  </head>
+  <body id="contact" class="bg-black">
+    <header>
+      <nav id="navbar">
+        <h1><a class="current" href="index.html">William Mabia</a></h1>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a class="current" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="contact-form">
+      <div class="container-2">
+        <h1>Get in Touch</h1>
+        <p class="text-grey">Please fill out the form below to contact us</p>
+        <form action="process.php">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" name="subject" id="subject" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea name="message" id="message"></textarea>
+          </div>
+
+          <button type="submit" class="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <p>
+        Designed and Coded by William Mabia &copy; 2021, All Rights Reserved
+      </p>
+    </footer>
+  </body>
+</html>
