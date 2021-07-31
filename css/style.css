@@ -6,17 +6,20 @@
 
 html {
   font-size: 10px;
+  color: #fff;
 }
 
 body {
   font-size: 1.6rem;
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 450;
+  background-color: #000;
+  padding: 5px;
 }
 
 a {
   text-decoration: none;
-  color: #000;
+  color: #fff;
 }
 
 /*navbar*/
@@ -32,7 +35,7 @@ a {
 }
 
 #navbar h1 {
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
 #navbar ul {
@@ -52,7 +55,7 @@ a {
 }
 
 #navbar .current {
-  color: #000;
+  color: #fff;
 }
 
 /*Cursor*/
@@ -66,9 +69,11 @@ a {
 }
 #landing-page {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 80vh;
+  padding: 0px 280px;
 }
 
 #landing-page .memoji {
@@ -83,8 +88,26 @@ a {
   padding: 1px;
 }
 
-.content h1 {
-  font-size: 2.1rem;
+/*Content*/
+.content {
+  display: grid;
+  grid-template-areas:
+    "left right"
+    "bottom bottom";
+  grid-gap: 1rem;
+}
+
+.top-left {
+  grid-area: left;
+  text-align: center;
+}
+
+.top-right {
+  grid-area: right;
+}
+
+.bottom {
+  grid-area: bottom;
 }
 
 /*Contact Page*/

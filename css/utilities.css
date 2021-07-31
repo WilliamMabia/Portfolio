@@ -5,3 +5,11 @@
 .text-grey {
   color: #a1a1a6;
 }
+
+.text-em {
+  font-size: 100px;
+}
+
+.text-white {
+  color: #fff;
+}
